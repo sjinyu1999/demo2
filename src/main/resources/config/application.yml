@@ -1,0 +1,16 @@
+# 端口
+server:
+  port: 8086 # 在 config/application.yml 中配置 server.port=8086 会覆盖 application.yml 中的配置
+  #  网址虚拟目录
+  servlet:
+    # 项目名称
+    context-path: /test # 默认为/
+
+# 设置 Mp 相关配置
+mybatis-plus:
+  global-config:
+    db-config:
+      table-prefix: sys_ # 表前缀
+      id-type: auto # 主键策略 数据库ID自增
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl # 打印sql语句

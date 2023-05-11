@@ -1,0 +1,64 @@
+2023-05-11 11:47:16.081  INFO 21700 --- [main] com.jinyu.WebTest                        : Starting WebTest on DESKTOP-ECJMBSR with PID 21700 (started by szrj in D:\idea\demo2)
+2023-05-11 11:47:16.091  INFO 21700 --- [main] com.jinyu.WebTest                        : The following profiles are active: @spring.profiles.active@
+2023-05-11 11:47:16.930  INFO 21700 --- [main] org.eclipse.jetty.util.log               : Logging initialized @2005ms to org.eclipse.jetty.util.log.Slf4jLog
+2023-05-11 11:47:17.188  INFO 21700 --- [main] o.s.b.w.e.j.JettyServletWebServerFactory : Server initialized with port: 8092
+2023-05-11 11:47:17.191  INFO 21700 --- [main] org.eclipse.jetty.server.Server          : jetty-9.4.42.v20210604; built: 2021-06-04T17:33:38.939Z; git: 5cd5e6d2375eeab146813b0de9f19eda6ab6e6cb; jvm 1.8.0_152-b16
+2023-05-11 11:47:17.208  INFO 21700 --- [main] o.e.j.s.h.ContextHandler.application     : Initializing Spring embedded WebApplicationContext
+2023-05-11 11:47:17.208  INFO 21700 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1013 ms
+2023-05-11 11:47:17.270  INFO 21700 --- [main] org.eclipse.jetty.server.session         : DefaultSessionIdManager workerName=node0
+2023-05-11 11:47:17.270  INFO 21700 --- [main] org.eclipse.jetty.server.session         : No SessionScavenger set, using defaults
+2023-05-11 11:47:17.271  INFO 21700 --- [main] org.eclipse.jetty.server.session         : node0 Scavenging every 660000ms
+2023-05-11 11:47:17.274  INFO 21700 --- [main] o.e.jetty.server.handler.ContextHandler  : Started o.s.b.w.e.j.JettyEmbeddedWebAppContext@1eb2d371{application,/test,[file:///C:/Users/szrj/AppData/Local/Temp/jetty-docbase.8092.1338292785439737147/],AVAILABLE}
+2023-05-11 11:47:17.275  INFO 21700 --- [main] org.eclipse.jetty.server.Server          : Started @2351ms
+2023-05-11 11:47:18.261  INFO 21700 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-05-11 11:47:18.533  INFO 21700 --- [main] o.e.j.s.h.ContextHandler.application     : Initializing Spring TestDispatcherServlet ''
+2023-05-11 11:47:18.533  INFO 21700 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-05-11 11:47:18.541  INFO 21700 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 8 ms
+2023-05-11 11:47:18.583  INFO 21700 --- [main] o.e.j.s.h.ContextHandler.application     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-11 11:47:18.584  INFO 21700 --- [main] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-05-11 11:47:18.584  INFO 21700 --- [main] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2023-05-11 11:47:18.608  INFO 21700 --- [main] o.e.jetty.server.AbstractConnector       : Started ServerConnector@28348c6{HTTP/1.1, (http/1.1)}{0.0.0.0:8092}
+2023-05-11 11:47:18.610  INFO 21700 --- [main] o.s.b.web.embedded.jetty.JettyWebServer  : Jetty started on port(s) 8092 (http/1.1) with context path '/test'
+2023-05-11 11:47:18.616  INFO 21700 --- [main] com.jinyu.WebTest                        : Started WebTest in 2.758 seconds (JVM running for 3.693)
+2023-05-11 11:47:18.862  WARN 21700 --- [main] com.jinyu.controller.BookController      : 警告
+2023-05-11 11:47:18.862 ERROR 21700 --- [main] com.jinyu.controller.BookController      : 错误
+2023-05-11 11:47:19.096  INFO 21700 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2023-05-11 11:47:20.751  INFO 21700 --- [SpringContextShutdownHook] o.e.jetty.server.AbstractConnector       : Stopped ServerConnector@28348c6{HTTP/1.1, (http/1.1)}{0.0.0.0:8092}
+2023-05-11 11:47:20.751  INFO 21700 --- [SpringContextShutdownHook] org.eclipse.jetty.server.session         : node0 Stopped scavenging
+2023-05-11 11:47:20.751  INFO 21700 --- [SpringContextShutdownHook] o.e.j.s.h.ContextHandler.application     : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-05-11 11:47:20.752  INFO 21700 --- [SpringContextShutdownHook] o.e.jetty.server.handler.ContextHandler  : Stopped o.s.b.w.e.j.JettyEmbeddedWebAppContext@1eb2d371{application,/test,[file:///C:/Users/szrj/AppData/Local/Temp/jetty-docbase.8092.1338292785439737147/],STOPPED}
+2023-05-11 11:47:20.752  INFO 21700 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2023-05-11 11:47:20.752  INFO 21700 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2023-05-11 11:47:20.754  INFO 21700 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2023-05-11 11:54:17.130  INFO 13256 --- [main] com.jinyu.WebTest                        : Starting WebTest on DESKTOP-ECJMBSR with PID 13256 (started by szrj in D:\idea\后端直接使用的模板\demo2)
+2023-05-11 11:54:17.141  INFO 13256 --- [main] com.jinyu.WebTest                        : The following profiles are active: @spring.profiles.active@
+2023-05-11 11:54:17.773  INFO 13256 --- [main] org.eclipse.jetty.util.log               : Logging initialized @1531ms to org.eclipse.jetty.util.log.Slf4jLog
+2023-05-11 11:54:18.001  INFO 13256 --- [main] o.s.b.w.e.j.JettyServletWebServerFactory : Server initialized with port: 8092
+2023-05-11 11:54:18.004  INFO 13256 --- [main] org.eclipse.jetty.server.Server          : jetty-9.4.42.v20210604; built: 2021-06-04T17:33:38.939Z; git: 5cd5e6d2375eeab146813b0de9f19eda6ab6e6cb; jvm 1.8.0_152-b16
+2023-05-11 11:54:18.021  INFO 13256 --- [main] o.e.j.s.h.ContextHandler.application     : Initializing Spring embedded WebApplicationContext
+2023-05-11 11:54:18.021  INFO 13256 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 857 ms
+2023-05-11 11:54:18.056  INFO 13256 --- [main] org.eclipse.jetty.server.session         : DefaultSessionIdManager workerName=node0
+2023-05-11 11:54:18.056  INFO 13256 --- [main] org.eclipse.jetty.server.session         : No SessionScavenger set, using defaults
+2023-05-11 11:54:18.083  INFO 13256 --- [main] org.eclipse.jetty.server.session         : node0 Scavenging every 600000ms
+2023-05-11 11:54:18.088  INFO 13256 --- [main] o.e.jetty.server.handler.ContextHandler  : Started o.s.b.w.e.j.JettyEmbeddedWebAppContext@3b90a30a{application,/test,[file:///C:/Users/szrj/AppData/Local/Temp/jetty-docbase.8092.7364361754820571046/],AVAILABLE}
+2023-05-11 11:54:18.088  INFO 13256 --- [main] org.eclipse.jetty.server.Server          : Started @1846ms
+2023-05-11 11:54:19.143  INFO 13256 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-05-11 11:54:19.456  INFO 13256 --- [main] o.e.j.s.h.ContextHandler.application     : Initializing Spring TestDispatcherServlet ''
+2023-05-11 11:54:19.456  INFO 13256 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-05-11 11:54:19.472  INFO 13256 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 16 ms
+2023-05-11 11:54:19.501  INFO 13256 --- [main] o.e.j.s.h.ContextHandler.application     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-11 11:54:19.501  INFO 13256 --- [main] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-05-11 11:54:19.502  INFO 13256 --- [main] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-05-11 11:54:19.523  INFO 13256 --- [main] o.e.jetty.server.AbstractConnector       : Started ServerConnector@64b70919{HTTP/1.1, (http/1.1)}{0.0.0.0:8092}
+2023-05-11 11:54:19.524  INFO 13256 --- [main] o.s.b.web.embedded.jetty.JettyWebServer  : Jetty started on port(s) 8092 (http/1.1) with context path '/test'
+2023-05-11 11:54:19.531  INFO 13256 --- [main] com.jinyu.WebTest                        : Started WebTest in 2.591 seconds (JVM running for 3.289)
+2023-05-11 11:54:19.720  WARN 13256 --- [main] com.jinyu.controller.BookController      : 警告
+2023-05-11 11:54:19.721 ERROR 13256 --- [main] com.jinyu.controller.BookController      : 错误
+2023-05-11 11:54:19.790  INFO 13256 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2023-05-11 11:54:20.265  INFO 13256 --- [SpringContextShutdownHook] o.e.jetty.server.AbstractConnector       : Stopped ServerConnector@64b70919{HTTP/1.1, (http/1.1)}{0.0.0.0:8092}
+2023-05-11 11:54:20.265  INFO 13256 --- [SpringContextShutdownHook] org.eclipse.jetty.server.session         : node0 Stopped scavenging
+2023-05-11 11:54:20.265  INFO 13256 --- [SpringContextShutdownHook] o.e.j.s.h.ContextHandler.application     : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-05-11 11:54:20.266  INFO 13256 --- [SpringContextShutdownHook] o.e.jetty.server.handler.ContextHandler  : Stopped o.s.b.w.e.j.JettyEmbeddedWebAppContext@3b90a30a{application,/test,[file:///C:/Users/szrj/AppData/Local/Temp/jetty-docbase.8092.7364361754820571046/],STOPPED}
+2023-05-11 11:54:20.266  INFO 13256 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2023-05-11 11:54:20.266  INFO 13256 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2023-05-11 11:54:20.268  INFO 13256 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed

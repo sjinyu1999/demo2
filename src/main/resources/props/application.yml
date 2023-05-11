@@ -1,0 +1,107 @@
+# 端口
+server:
+  port: 8083
+  #  网址虚拟目录
+  servlet:
+    # 项目名称
+    context-path: /test # 默认为/
+# 法一：配置相关信息
+#spring:
+#  datasource:
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#    url: jdbc:mysql://localhost:7406/sys?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=true&serverTimezone=GMT%2B8
+#    username: root
+#    password: 123456
+#    type: com.alibaba.druid.pool.DruidDataSource
+
+# 法二：配置相关信息
+spring:
+  datasource:
+    druid:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://localhost:7406/sys?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=true&serverTimezone=GMT%2B8
+      username: root
+      password: 123456
+
+# 设置 Mp 相关配置
+mybatis-plus:
+  global-config:
+    db-config:
+      table-prefix: sys_ # 表前缀
+      id-type: auto # 主键策略 数据库ID自增
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl # 打印sql语句
+country: china
+province: guangdong
+city: shenzhen
+street: nanshan
+
+party: true
+
+# 新增数组
+array:
+  - 1
+  - 2
+  - 3
+  - 4
+
+# 新增map
+map:
+  key1: value1
+  key2: value2
+  key3: value3
+
+
+
+# baseDir
+baseDir: D:/test
+# 使用${}获取配置文件中的值
+tempDir: ${baseDir}/temp
+
+# datasource
+#datasource:
+#  driver: com.mysql.jdbc.Driver
+#  url: jdbc:mysql://localhost:7406/test?useUnicode=true&characterEncoding=utf-8&useSSL=false
+#  username: root
+#  password: 123456
+
+
+# datasource
+#datasource:
+#  driver: com.mysql.jdbc.Driver
+#  url: jdbc:mysql://localhost:7406/test?useUnicode=true&characterEncoding=utf-8&useSSL=false
+#  username: root
+#  password: 123456
+
+### 多环境开发配置
+# 应用环境（dev - 开发环境、test - 测试环境、prod - 生产环境）
+# 应用环境
+#spring:
+#  profiles:
+#    active: dev/prod/test(用什么环境就设置什么环境)
+
+## 生产环境（prod）：默认配置
+#spring:
+#  profiles: prod（过时的格式）
+#server:
+#  port: 80
+#
+## 开发环境（dev）：开发环境配置
+#spring:
+#  profiles: dev（过时的格式）
+#server:
+#  port: 81
+#
+## 测试环境（test）：测试环境配置
+## 法一：配置相关信息
+#spring:
+#  profiles: test（过时的格式）
+#server:
+#  port: 82
+## 法二：配置相关信息（推荐的格式）
+#spring:
+#  config:
+#    activate:
+#      on-profile: test
+#server:
+#  port: 82
